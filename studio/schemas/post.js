@@ -1,11 +1,11 @@
 const post = {
+  name: "post",
   title: "Post",
   type: "document",
-  name: "post",
   fields: [
     {
-      title: "Title",
       name: "title",
+      title: "Title",
       type: "string",
     },
     {
@@ -21,11 +21,7 @@ const post = {
       name: "author",
       title: "Author",
       type: "reference",
-      to: [
-        {
-          type: "author",
-        },
-      ],
+      to: { type: "author" },
     },
     {
       name: "mainImage",
@@ -35,12 +31,6 @@ const post = {
         hotspot: true,
       },
     },
-    // {
-    //   name: "categories",
-    //   title: "Categories",
-    //   type: "array",
-    //   of: [{ type: "reference", to: { type: "category" } }],
-    // },
     {
       name: "publishedAt",
       title: "Published at",
@@ -48,9 +38,23 @@ const post = {
     },
     {
       name: "body",
-      type: "richText",
-      title: "Body Text",
+      title: "Body",
+      type: "blockContent",
     },
   ],
+
+  preview: {
+    select: {
+      title: "title",
+      author: "author.name",
+      media: "mainImage",
+    },
+    prepare(selection) {
+      const { author } = selection;
+      return Object.assign({}, selection, {
+        subtitle: author && `by ${author}`,
+      });
+    },
+  },
 };
 export default post;
