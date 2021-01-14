@@ -7,6 +7,8 @@ import post from "./post";
 import author from "./author";
 import richText from "./richText";
 import figure from "./figure";
+import project from "./project";
+
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -16,6 +18,7 @@ export default createSchema({
   types: schemaTypes.concat([
     post,
     author,
+    project,
     richText,
     figure,
     /* Your types here! */

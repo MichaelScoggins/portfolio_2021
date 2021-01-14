@@ -1,4 +1,4 @@
-export default {
+const richText = {
   name: "richText",
   type: "array",
   of: [
@@ -10,3 +10,4 @@ export default {
     },
   ],
 };
+export default richText;

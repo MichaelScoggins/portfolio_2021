@@ -1,4 +1,4 @@
-export default {
+const figure = {
   name: "figure",
   type: "object",
   title: "Figure",
@@ -20,3 +20,4 @@ export default {
     },
   ],
 };
+export default figure;

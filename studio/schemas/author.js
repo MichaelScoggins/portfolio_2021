@@ -1,4 +1,4 @@
-export default {
+const author = {
   name: "author",
   type: "document",
   title: "Author",
@@ -18,3 +18,4 @@ export default {
     },
   ],
 };
+export default author;
