@@ -39,7 +39,7 @@ const post = {
     {
       name: "body",
       title: "Body",
-      type: "blockContent",
+      type: "richText",
     },
   ],
 
