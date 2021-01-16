@@ -5,6 +5,9 @@ const richText = {
     {
       type: "block",
     },
+    {
+      type: "image",
+    },
   ],
 };
 export default richText;
