@@ -1,21 +1,49 @@
 const author = {
   name: "author",
-  type: "document",
   title: "Author",
+  type: "document",
   fields: [
     {
       name: "name",
-      type: "string",
       title: "Name",
+      type: "string",
     },
     {
-      name: "bio",
-      type: "richText",
+      name: "slug",
+      title: "Slug",
+      type: "slug",
+      options: {
+        source: "name",
+        maxLength: 96,
+      },
     },
     {
       name: "image",
-      type: "figure",
+      title: "Image",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: "bio",
+      title: "Bio",
+      type: "array",
+      of: [
+        {
+          title: "Block",
+          type: "block",
+          styles: [{ title: "Normal", value: "normal" }],
+          lists: [],
+        },
+      ],
     },
   ],
+  preview: {
+    select: {
+      title: "name",
+      media: "image",
+    },
+  },
 };
 export default author;

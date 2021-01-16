@@ -4,5 +4,5 @@ I use the following as a template: https://www.youtube.com/watch?v=NO7_jgzVgbc&t
 
 ## The codebase primarily utilizes:
 
-- ### **[sanity.io](https://www.sanity.io/)** headless cms and
+- ### **[sanity.io](https://www.sanity.io/)** for content management (headless cms) and
 - ### **[tailwindcss](https://tailwindcss.com/)** for styles
