@@ -61,6 +61,9 @@ const blockContent = {
       type: "image",
       options: { hotspot: true },
     },
+    {
+      type: "code",
+    },
   ],
 };
 export default blockContent;

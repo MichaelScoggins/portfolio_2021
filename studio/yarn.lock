@@ -882,9 +882,9 @@
   version "1.1.2"
   resolved "https://registry.npmjs.org/@sanity/asset-utils/-/asset-utils-1.1.2.tgz#d6b4b875bee4189cb56f274a7fb5494174463cb2"
 
-"@sanity/base@2.1.4", "@sanity/base@^2.1.4":
-  version "2.1.4"
-  resolved "https://registry.npmjs.org/@sanity/base/-/base-2.1.4.tgz#e273d2d34ef746c2f86a80a64c6e4b0c6e2b4daa"
+"@sanity/base@2.1.6", "@sanity/base@^2.1.6":
+  version "2.1.6"
+  resolved "https://registry.npmjs.org/@sanity/base/-/base-2.1.6.tgz#0cacdb33c0aa41f26abc25c4be28b4acc654dc0c"
   dependencies:
     "@popperjs/core" "^2.5.4"
     "@reach/auto-id" "^0.10.5"
@@ -896,7 +896,6 @@
     "@sanity/image-url" "^0.140.19"
     "@sanity/initial-value-templates" "2.1.4"
     "@sanity/mutator" "2.1.4"
-    "@sanity/preview" "2.1.4"
     "@sanity/schema" "2.1.4"
     "@sanity/state-router" "2.1.4"
     "@sanity/structure" "2.1.4"
@@ -973,6 +972,13 @@
     get-it "^5.0.3"
     make-error "^1.3.0"
     object-assign "^4.1.1"
+
+"@sanity/code-input@^2.1.4":
+  version "2.1.4"
+  resolved "https://registry.npmjs.org/@sanity/code-input/-/code-input-2.1.4.tgz#2c5d273e0873817005e1c5729f7cff8647b489e1"
+  dependencies:
+    lodash "^4.17.15"
+    react-ace "^5.0.1"
 
 "@sanity/color@^1.0.0":
   version "1.0.0"
@@ -1065,11 +1071,11 @@
     "@sanity/generate-help-url" "2.1.4"
     lodash "^4.17.15"
 
-"@sanity/default-layout@^2.1.4":
-  version "2.1.4"
-  resolved "https://registry.npmjs.org/@sanity/default-layout/-/default-layout-2.1.4.tgz#759c12f86b76822dba51d0928da8c335112e1a18"
+"@sanity/default-layout@^2.1.6":
+  version "2.1.6"
+  resolved "https://registry.npmjs.org/@sanity/default-layout/-/default-layout-2.1.6.tgz#139d032493d50df030f75257a2827faa436a25d3"
   dependencies:
-    "@sanity/base" "2.1.4"
+    "@sanity/base" "2.1.6"
     "@sanity/generate-help-url" "2.1.4"
     "@sanity/util" "2.1.4"
     classnames "^2.2.5"
@@ -1087,17 +1093,17 @@
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
-"@sanity/desk-tool@^2.1.4":
-  version "2.1.4"
-  resolved "https://registry.npmjs.org/@sanity/desk-tool/-/desk-tool-2.1.4.tgz#f611e4dead8cd8dcbd8ca5520ec1389390dd4a69"
+"@sanity/desk-tool@^2.1.6":
+  version "2.1.6"
+  resolved "https://registry.npmjs.org/@sanity/desk-tool/-/desk-tool-2.1.6.tgz#249c02d41078d92f6af50d004133ff830a875456"
   dependencies:
     "@popperjs/core" "^2.5.4"
     "@reach/auto-id" "^0.10.5"
-    "@sanity/base" "2.1.4"
+    "@sanity/base" "2.1.6"
     "@sanity/data-aspects" "2.1.4"
     "@sanity/diff" "2.1.4"
-    "@sanity/field" "2.1.4"
-    "@sanity/form-builder" "2.1.4"
+    "@sanity/field" "2.1.6"
+    "@sanity/form-builder" "2.1.6"
     "@sanity/generate-help-url" "2.1.4"
     "@sanity/mutator" "2.1.4"
     "@sanity/react-hooks" "2.1.4"
@@ -1159,12 +1165,12 @@
     simple-get "^4.0.0"
     split2 "^3.2.2"
 
-"@sanity/field@2.1.4":
-  version "2.1.4"
-  resolved "https://registry.npmjs.org/@sanity/field/-/field-2.1.4.tgz#1f4dae18ee90f873a6a2db8907d89fdca086ef64"
+"@sanity/field@2.1.6":
+  version "2.1.6"
+  resolved "https://registry.npmjs.org/@sanity/field/-/field-2.1.6.tgz#f80fafacacf59588aa99b2e489f880b05db773df"
   dependencies:
     "@sanity/asset-utils" "^1.1.2"
-    "@sanity/base" "2.1.4"
+    "@sanity/base" "2.1.6"
     "@sanity/diff" "2.1.4"
     "@sanity/react-hooks" "2.1.4"
     "@sanity/types" "2.1.4"
@@ -1172,11 +1178,11 @@
     date-fns "^2.16.1"
     sanity-diff-patch "^1.0.9"
 
-"@sanity/form-builder@2.1.4":
-  version "2.1.4"
-  resolved "https://registry.npmjs.org/@sanity/form-builder/-/form-builder-2.1.4.tgz#e07948df93c0c5274e4ef96812388f6ad8b9f155"
+"@sanity/form-builder@2.1.6":
+  version "2.1.6"
+  resolved "https://registry.npmjs.org/@sanity/form-builder/-/form-builder-2.1.6.tgz#0ac23798a527ee01fdc7d6b731ed6542e8f8075f"
   dependencies:
-    "@sanity/base" "2.1.4"
+    "@sanity/base" "2.1.6"
     "@sanity/block-tools" "2.1.4"
     "@sanity/generate-help-url" "2.1.4"
     "@sanity/icons" "^1.0.0"
@@ -1320,18 +1326,6 @@
     lodash "^4.17.15"
     slate "^0.58.4"
     styled-components "^5.0.0"
-
-"@sanity/preview@2.1.4":
-  version "2.1.4"
-  resolved "https://registry.npmjs.org/@sanity/preview/-/preview-2.1.4.tgz#efb00d0a321b420660719deed2d9f73bc203cbc4"
-  dependencies:
-    "@sanity/image-url" "^0.140.19"
-    "@sanity/types" "2.1.4"
-    lodash "^4.17.15"
-    observable-props "^2.0.0"
-    react-props-stream "^1.0.0"
-    rxjs "^6.5.3"
-    shallow-equals "^1.0.0"
 
 "@sanity/react-hooks@2.1.4":
   version "2.1.4"
@@ -1573,8 +1567,8 @@
   resolved "https://registry.npmjs.org/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
 
 "@types/node@*":
-  version "14.14.20"
-  resolved "https://registry.npmjs.org/@types/node/-/node-14.14.20.tgz#f7974863edd21d1f8a494a73e8e2b3658615c340"
+  version "14.14.21"
+  resolved "https://registry.npmjs.org/@types/node/-/node-14.14.21.tgz#d934aacc22424fe9622ebf6857370c052eae464e"
 
 "@types/node@^8.0.0":
   version "8.10.66"
@@ -1722,10 +1716,6 @@ ansi-styles@^3.2.1:
   resolved "https://registry.npmjs.org/ansi-styles/-/ansi-styles-3.2.1.tgz#41fbb20243e50b12be0f04b8dedbf07520ce841d"
   dependencies:
     color-convert "^1.9.0"
-
-any-observable@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.npmjs.org/any-observable/-/any-observable-0.2.0.tgz#c67870058003579009083f54ac0abafb5c33d242"
 
 anymatch@^2.0.0:
   version "2.0.0"
@@ -2082,6 +2072,10 @@ brace-expansion@^1.1.7:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
 
+brace@^0.11.0:
+  version "0.11.1"
+  resolved "https://registry.npmjs.org/brace/-/brace-0.11.1.tgz#4896fcc9d544eef45f4bb7660db320d3b379fe58"
+
 braces@^2.3.1, braces@^2.3.2:
   version "2.3.2"
   resolved "https://registry.npmjs.org/braces/-/braces-2.3.2.tgz#5979fd3f14cd531565e5fa2df1abfff1dfaee729"
@@ -2253,9 +2247,9 @@ cache-base@^1.0.1:
     union-value "^1.0.0"
     unset-value "^1.0.0"
 
-call-bind@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/call-bind/-/call-bind-1.0.1.tgz#29aca9151f8ddcfd5b9b786898f005f425e88567"
+call-bind@^1.0.0, call-bind@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/call-bind/-/call-bind-1.0.2.tgz#b1d4e89e688119c3c9a903ad30abb2f6a919be3c"
   dependencies:
     function-bind "^1.1.1"
     get-intrinsic "^1.0.2"
@@ -2321,8 +2315,8 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000792, caniuse-lite@^1.0.30000805, caniuse-lite@^1.0.30001173:
-  version "1.0.30001174"
-  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001174.tgz#0f2aca2153fd88ceb07a2bb982fc2acb787623c4"
+  version "1.0.30001178"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001178.tgz#3ad813b2b2c7d585b0be0a2440e1e233c6eabdbc"
 
 capture-stack-trace@^1.0.0:
   version "1.0.1"
@@ -2392,8 +2386,8 @@ chokidar@^2.0.3, chokidar@^2.1.8:
     fsevents "^1.2.7"
 
 chokidar@^3.4.1:
-  version "3.5.0"
-  resolved "https://registry.npmjs.org/chokidar/-/chokidar-3.5.0.tgz#458a4816a415e9d3b3caa4faec2b96a6935a9e65"
+  version "3.5.1"
+  resolved "https://registry.npmjs.org/chokidar/-/chokidar-3.5.1.tgz#ee9ce7bbebd2b79f49f304799d5468e31e14e68a"
   dependencies:
     anymatch "~3.1.1"
     braces "~3.0.2"
@@ -3245,8 +3239,8 @@ ee-first@1.1.1:
   resolved "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
 electron-to-chromium@^1.3.30, electron-to-chromium@^1.3.634:
-  version "1.3.635"
-  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.635.tgz#8d1591eeca6b257d380061a2c04f0b3cc6c9e33b"
+  version "1.3.641"
+  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.641.tgz#03f14efd70a7971eff2efc947b3c1d0f717c82b9"
 
 element-resize-detector@1.1.13:
   version "1.1.13"
@@ -3321,7 +3315,7 @@ error-ex@^1.2.0, error-ex@^1.3.1:
   dependencies:
     is-arrayish "^0.2.1"
 
-es-abstract@^1.17.0-next.1, es-abstract@^1.17.2:
+es-abstract@^1.17.2:
   version "1.17.7"
   resolved "https://registry.npmjs.org/es-abstract/-/es-abstract-1.17.7.tgz#a4de61b2f66989fc7421676c1cb9787573ace54c"
   dependencies:
@@ -4696,12 +4690,6 @@ is-obj@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/is-obj/-/is-obj-2.0.0.tgz#473fb05d973705e3fd9620545018ca8e22ef4982"
 
-is-observable@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.npmjs.org/is-observable/-/is-observable-0.2.0.tgz#b361311d83c6e5d726cabf5e250b0237106f5ae2"
-  dependencies:
-    symbol-observable "^0.2.2"
-
 is-plain-object@^2.0.1, is-plain-object@^2.0.3, is-plain-object@^2.0.4:
   version "2.0.4"
   resolved "https://registry.npmjs.org/is-plain-object/-/is-plain-object-2.0.4.tgz#2c163b3fafb1b606d9d17928f05c2a1c38e07677"
@@ -5105,6 +5093,10 @@ lodash.foreach@^3.0.3:
     lodash._bindcallback "^3.0.0"
     lodash.isarray "^3.0.0"
 
+lodash.get@^4.4.2:
+  version "4.4.2"
+  resolved "https://registry.npmjs.org/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
+
 lodash.isarguments@^3.0.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz#2f573d85c6a24289ff00663b491c1d338ff3458a"
@@ -5112,6 +5104,10 @@ lodash.isarguments@^3.0.0:
 lodash.isarray@^3.0.0:
   version "3.0.4"
   resolved "https://registry.npmjs.org/lodash.isarray/-/lodash.isarray-3.0.4.tgz#79e4eb88c36a8122af86f844aa9bcd851b5fbb55"
+
+lodash.isequal@^4.1.1:
+  version "4.5.0"
+  resolved "https://registry.npmjs.org/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
 
 lodash.isplainobject@^4.0.0, lodash.isplainobject@^4.0.6:
   version "4.0.6"
@@ -5323,8 +5319,8 @@ mime@1.6.0, mime@^1.4.1:
   resolved "https://registry.npmjs.org/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
 
 mime@^2.1.0:
-  version "2.4.7"
-  resolved "https://registry.npmjs.org/mime/-/mime-2.4.7.tgz#962aed9be0ed19c91fd7dc2ece5d7f4e89a90d74"
+  version "2.5.0"
+  resolved "https://registry.npmjs.org/mime/-/mime-2.5.0.tgz#2b4af934401779806ee98026bb42e8c1ae1876b1"
 
 mimic-fn@^1.0.0:
   version "1.2.0"
@@ -5648,14 +5644,6 @@ object.values@^1.1.0:
 observable-callback@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/observable-callback/-/observable-callback-1.0.1.tgz#048a27e14e73a8163a165ab77313523a8e6a96d9"
-
-observable-props@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/observable-props/-/observable-props-2.0.0.tgz#d22018b505318952adabce1da5cb777d4eb652b3"
-  dependencies:
-    any-observable "^0.2.0"
-    is-observable "^0.2.0"
-    xtend "^4.0.1"
 
 on-finished@~2.3.0:
   version "2.3.0"
@@ -6630,7 +6618,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.7, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7, prop-types@^15.7.2:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   dependencies:
@@ -6782,6 +6770,15 @@ raw-body@2.4.0:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
+react-ace@^5.0.1:
+  version "5.10.0"
+  resolved "https://registry.npmjs.org/react-ace/-/react-ace-5.10.0.tgz#e328b37ac52759f700be5afdb86ada2f5ec84c5e"
+  dependencies:
+    brace "^0.11.0"
+    lodash.get "^4.4.2"
+    lodash.isequal "^4.1.1"
+    prop-types "^15.5.8"
+
 react-base16-styling@^0.6.0:
   version "0.6.0"
   resolved "https://registry.npmjs.org/react-base16-styling/-/react-base16-styling-0.6.0.tgz#ef2156d66cf4139695c8a167886cb69ea660792c"
@@ -6879,8 +6876,8 @@ react-json-inspector@^7.1.1:
     prop-types "^15.5.10"
 
 react-json-view@^1.19.1:
-  version "1.19.1"
-  resolved "https://registry.npmjs.org/react-json-view/-/react-json-view-1.19.1.tgz#95d8e59e024f08a25e5dc8f076ae304eed97cf5c"
+  version "1.20.0"
+  resolved "https://registry.npmjs.org/react-json-view/-/react-json-view-1.20.0.tgz#17fdec1ac2e61b41fbce39fc5c3aab8cad23c8a0"
   dependencies:
     flux "^3.1.3"
     react-base16-styling "^0.6.0"
@@ -6901,8 +6898,8 @@ react-measure@^2.3.0:
     resize-observer-polyfill "^1.5.0"
 
 react-onclickoutside@^6.7.1:
-  version "6.9.0"
-  resolved "https://registry.npmjs.org/react-onclickoutside/-/react-onclickoutside-6.9.0.tgz#a54bc317ae8cf6131a5d78acea55a11067f37a1f"
+  version "6.9.1"
+  resolved "https://registry.npmjs.org/react-onclickoutside/-/react-onclickoutside-6.9.1.tgz#44f94aba8e82721f2550fbd187c7d2d4669eab14"
 
 react-popper@^1.0.2:
   version "1.3.7"
@@ -7112,11 +7109,11 @@ regex-not@^1.0.0, regex-not@^1.0.2:
     safe-regex "^1.1.0"
 
 regexp.prototype.flags@^1.2.0:
-  version "1.3.0"
-  resolved "https://registry.npmjs.org/regexp.prototype.flags/-/regexp.prototype.flags-1.3.0.tgz#7aba89b3c13a64509dabcf3ca8d9fbb9bdf5cb75"
+  version "1.3.1"
+  resolved "https://registry.npmjs.org/regexp.prototype.flags/-/regexp.prototype.flags-1.3.1.tgz#7ef352ae8d159e758c0eadca6f8fcb4eef07be26"
   dependencies:
+    call-bind "^1.0.2"
     define-properties "^1.1.3"
-    es-abstract "^1.17.0-next.1"
 
 regexpu-core@^4.7.1:
   version "4.7.1"
@@ -7854,10 +7851,6 @@ svgo@^1.0.0:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
-symbol-observable@^0.2.2:
-  version "0.2.4"
-  resolved "https://registry.npmjs.org/symbol-observable/-/symbol-observable-0.2.4.tgz#95a83db26186d6af7e7a18dbd9760a2f86d08f40"
-
 symbol-observable@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
@@ -8536,7 +8529,7 @@ xregexp@2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/xregexp/-/xregexp-2.0.0.tgz#52a63e56ca0b84a7f3a5f3d61872f126ad7a5943"
 
-xtend@^4.0.0, xtend@^4.0.1, xtend@~4.0.1:
+xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.2"
   resolved "https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
 

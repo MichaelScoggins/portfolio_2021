@@ -8,6 +8,9 @@ const richText = {
     {
       type: "image",
     },
+    {
+      type: "code",
+    },
   ],
 };
 export default richText;
