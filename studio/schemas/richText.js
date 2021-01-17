@@ -10,6 +10,9 @@ const richText = {
     },
     {
       type: "code",
+      options: {
+        theme: "monokai",
+      },
     },
   ],
 };

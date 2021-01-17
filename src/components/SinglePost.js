@@ -4,7 +4,7 @@ import sanityClient from "../client.js";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -17,7 +17,7 @@ const serializers = {
       <pre data-language={props.node.language}>
         <SyntaxHighlighter
           language={props.node.language || "text"}
-          // style={dark}
+          style={dracula}
         >
           {props.node.code}
         </SyntaxHighlighter>
