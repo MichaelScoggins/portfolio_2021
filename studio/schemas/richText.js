@@ -7,6 +7,16 @@ const richText = {
     },
     {
       type: "image",
+      fields: [
+        {
+          name: "caption",
+          type: "string",
+          title: "Caption",
+          options: {
+            isHighlighted: true,
+          },
+        },
+      ],
     },
     {
       type: "code",
