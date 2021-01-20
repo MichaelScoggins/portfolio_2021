@@ -1,19 +1,16 @@
 import React from "react";
-import image from "../moonman_relaxer.jpg";
+import largeImg from "../moonman_relaxer.jpg";
+import smallImg from "../astronot_gna_make_it.jpg";
 
 export default function Home() {
   return (
     <main>
       <img
-        src={image}
-        alt="Lost In Space"
+        src={smallImg}
+        srcSet={`${smallImg} 300w, ${largeImg} 1000w`}
+        alt="astronaut"
         className="absolute object-cover w-full h-full"
       />
-      <section className="relative flex justify-center min-h-screen pt-12 lg:pt-35 px-8">
-        <h1 className="text-6xl text-green-100 font-bold cursive leading-none lg:leading-snug home-name pl-20">
-          Welcome. I'm Michael!
-        </h1>
-      </section>
     </main>
   );
 }
