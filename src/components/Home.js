@@ -7,7 +7,7 @@ export default function Home() {
     <main>
       <img
         src={smallImg}
-        srcSet={`${smallImg} 300w, ${largeImg} 1000w`}
+        srcSet={`${smallImg} 300w, ${largeImg} 1280w`}
         alt="astronaut"
         className="absolute object-cover w-full h-full"
       />
