@@ -1,22 +1,15 @@
 import React from "react";
-import largeImg from "../moonman_relaxer.jpg";
-import smallImg from "../astronot_gna_make_it.jpg";
+import landscapeImg from "../moonman_relaxer.jpg";
+import portraitImg from "../virtual_dom_cropped.jpg";
 
 export default function Home() {
   return (
     <main>
-      {/* <img
-        src={smallImg}
-        srcSet={`${smallImg} 100w, ${largeImg} 1280w`}
-        alt="astronaut"
-        className="absolute object-cover w-full h-full"
-      /> */}
       <picture>
-        <source srcset={largeImg} media="(min-width: 1200px)" />
-        {/* <source srcset="medium.jpg" media="(min-width: 800px)" /> */}
+        <source srcset={landscapeImg} media="(min-width: 568px)" />
         <img
-          src={smallImg}
-          alt="astronaut"
+          src={portraitImg}
+          alt="shoot for the stars chill on the moon"
           className="absolute object-cover w-full h-full"
         />
       </picture>

@@ -53,13 +53,6 @@ export default function NavBar() {
             style={{ height: 35, width: 35 }}
           />
           <SocialIcon
-            url="https://medium.com/@scoggins-dev"
-            className="mr-4"
-            target="_blank"
-            fgColor="#fff"
-            style={{ height: 35, width: 35 }}
-          />
-          <SocialIcon
             url="https://linkedin.com/in/michael-a-scoggins"
             className="mr-4"
             target="_blank"
@@ -68,6 +61,13 @@ export default function NavBar() {
           />
           <SocialIcon
             url="https://twitter.com/ScogginsDev"
+            className="mr-4"
+            target="_blank"
+            fgColor="#fff"
+            style={{ height: 35, width: 35 }}
+          />
+          <SocialIcon
+            url="https://medium.com/@scoggins-dev"
             className="mr-4"
             target="_blank"
             fgColor="#fff"
