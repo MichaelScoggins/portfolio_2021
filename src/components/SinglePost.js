@@ -15,11 +15,11 @@ const serializers = {
   types: {
     code: (props) => (
       <pre data-language={props.node.language}>
-        <code class={props.node.language}>
-          <SyntaxHighlighter language={props.node.language} style={coldarkDark}>
-            {props.node.code}
-          </SyntaxHighlighter>
-        </code>
+        {/* <code class={props.node.language}> */}
+        <SyntaxHighlighter language={props.node.language} style={coldarkDark}>
+          {props.node.code}
+        </SyntaxHighlighter>
+        {/* </code> */}
       </pre>
     ),
   },
@@ -54,8 +54,8 @@ export default function SinglePost() {
   if (!singlePost) return <div>Loading...</div>;
 
   return (
-    <main className="bg-gray-200 min-h-screen p-12">
-      <article className="container shadow-lg mx-auto bg-green-100 rounded-lg">
+    <main className="bg-yellow-200 min-h-screen p-12">
+      <article className="container shadow-lg mx-auto bg-green-300 rounded-lg">
         <header className="relative">
           <div className="absolute h-full w-full flex items-center justify-center p-8">
             <div className="bg-gray-300 bg-opacity-80 rounded p-12">
@@ -81,7 +81,7 @@ export default function SinglePost() {
             style={{ height: "300px" }}
           />
         </header>
-        <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
+        <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full text-yellow-900">
           <BlockContent
             blocks={singlePost.body}
             serializers={serializers}

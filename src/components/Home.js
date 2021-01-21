@@ -1,5 +1,6 @@
 import React from "react";
 import landscapeImg from "../moonman_relaxer.jpg";
+// import { slide as Menu } from "react-burger-menu";
 // import portraitImg from "../virtual_dom_cropped.jpg";
 
 export default function Home() {
