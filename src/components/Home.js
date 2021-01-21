@@ -15,7 +15,7 @@ export default function Home() {
       </picture>
       <section className="relative flex justify-center pt-5 lg:pt-35 px-8">
         <h1 className="text-6xl text-blue-400 font-bold cursive leading-none lg:leading-snug">
-          Welcome. I'm{" "}
+          Welcome! I'm{" "}
           <span className="leading-snug rounded bg-green-300 text-white bg-opacity-80">
             Michael!
           </span>
