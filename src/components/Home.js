@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main>
       <picture>
-        <source srcset={landscapeImg} media="(min-width: 568px)" />
+        <source srcset={landscapeImg} media="(min-width: 500px)" />
         <img
           src={portraitImg}
           alt="shoot for the stars chill on the moon"
