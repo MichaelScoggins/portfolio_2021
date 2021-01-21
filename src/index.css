@@ -16,6 +16,7 @@
   border-radius: 5px;
 }
 
-.home-name {
-  font-size: 150px;
+.prose {
+  /* font-family: "Noto Sans", cursive; */
+  font-weight: 450;
 }
