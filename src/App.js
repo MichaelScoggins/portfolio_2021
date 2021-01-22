@@ -22,7 +22,7 @@ function App() {
       <>
         <GlobalStyles />
         <BrowserRouter>
-          <div ref={node}>
+          <nav id="burger-menu" ref={node}>
             <div
               style={{ top: "5%" }}
               className="fixed absolute items-center rounded"
@@ -30,7 +30,7 @@ function App() {
               <Burger open={open} setOpen={setOpen} />
             </div>
             <Menu open={open} setOpen={setOpen} />
-          </div>
+          </nav>
           <NavBar />
           <Switch>
             <Route component={Home} path="/" exact />
