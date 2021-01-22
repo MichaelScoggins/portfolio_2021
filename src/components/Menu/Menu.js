@@ -1,29 +1,41 @@
 // Menu.js
 import React from "react";
+import { bool } from "prop-types";
 import { StyledMenu } from "./Menu.styled";
 
-const Menu = () => {
+const Menu = ({ open }) => {
   return (
-    <StyledMenu>
+    <StyledMenu open={open}>
       <a href="/">
-        <span role="img" aria-label="about us">
-          &#x1f481;&#x1f3fb;&#x200d;&#x2642;&#xfe0f;
+        <span role="img" aria-label="home">
+          🏡
         </span>
-        About us
+        Home
       </a>
       <a href="/">
-        <span role="img" aria-label="price">
-          &#x1f4b8;
+        <span role="img" aria-label="blog">
+          📓
         </span>
-        Pricing
+        Blog Posts
       </a>
       <a href="/">
-        <span role="img" aria-label="contact">
-          &#x1f4e9;
+        <span role="img" aria-label="projects">
+          📐
         </span>
-        Contact
+        Projects
+      </a>
+      <a href="/">
+        <span role="img" aria-label="About Me">
+          👨‍💻
+        </span>
+        About Me!
       </a>
     </StyledMenu>
   );
 };
+
+Menu.propTypes = {
+  open: bool.isRequired,
+};
+
 export default Menu;
