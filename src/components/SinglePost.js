@@ -51,7 +51,8 @@ export default function SinglePost() {
       .catch(console.error);
   }, [slug]);
 
-  if (!singlePost) return <div>Loading...</div>;
+  if (!singlePost)
+    return <div style={{ color: "indigo", fontWeigh: 400 }}>Loading...</div>;
 
   return (
     <main className="bg-yellow-200 min-h-screen p-12">

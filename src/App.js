@@ -5,19 +5,27 @@ import SinglePost from "./components/SinglePost";
 import Post from "./components/Post";
 import Project from "./components/Project";
 import NavBar from "./components/NavBar";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./global";
+import { theme } from "./theme";
 
 function App() {
   return (
-    <BrowserRouter>
-      <NavBar />
-      <Switch>
-        <Route component={Home} path="/" exact />
-        <Route component={About} path="/about" />
-        <Route component={SinglePost} path="/post/:slug" />
-        <Route component={Post} path="/post" />
-        <Route component={Project} path="/project" />
-      </Switch>
-    </BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <>
+        <GlobalStyles />
+        <BrowserRouter>
+          <NavBar />
+          <Switch>
+            <Route component={Home} path="/" exact />
+            <Route component={About} path="/about" />
+            <Route component={SinglePost} path="/post/:slug" />
+            <Route component={Post} path="/post" />
+            <Route component={Project} path="/project" />
+          </Switch>
+        </BrowserRouter>
+      </>
+    </ThemeProvider>
   );
 }
 
