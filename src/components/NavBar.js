@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
+import { Burger, Menu } from "../components";
 
 export default function NavBar() {
   return (
@@ -10,6 +11,10 @@ export default function NavBar() {
         className="container mx-auto flex justify-between"
       >
         <nav id="nav" className="flex">
+          <div className="md:hidden inline-flex items-center py-3 px-3 my-5 rounded">
+            <Burger />
+          </div>
+          <Menu />
           <NavLink
             to="/"
             exact
