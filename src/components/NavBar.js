@@ -1,15 +1,8 @@
-import React, { useState, useRef } from "react";
-import { useOnClickOutside } from "../hooks";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
-import { Burger, Menu } from "../components";
 
 export default function NavBar() {
-  const [open, setOpen] = useState(false);
-  const node = useRef();
-
-  useOnClickOutside(node, () => setOpen(false));
-
   return (
     <header id="nav-header" className="bg-gray-600">
       <div
@@ -17,13 +10,6 @@ export default function NavBar() {
         className="container mx-auto flex justify-between"
       >
         <nav id="nav" className="flex">
-          <div
-            ref={node}
-            className="md:hidden inline-flex items-center py-3 px-3 my-5 rounded"
-          >
-            <Burger open={open} setOpen={setOpen} />
-            <Menu open={open} setOpen={setOpen} />
-          </div>
           <NavLink
             to="/"
             exact
