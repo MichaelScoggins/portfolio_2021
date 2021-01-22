@@ -19,7 +19,7 @@ export default function NavBar() {
         <nav id="nav" className="flex">
           <div
             ref={node}
-            className="inline-flex items-center py-3 px-3 my-5 rounded"
+            className="md:hidden inline-flex items-center py-3 px-3 my-5 rounded"
           >
             <Burger open={open} setOpen={setOpen} />
             <Menu open={open} setOpen={setOpen} />
