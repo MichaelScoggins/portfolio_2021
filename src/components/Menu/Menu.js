@@ -5,27 +5,30 @@ import { bool } from "prop-types";
 import { StyledMenu } from "./Menu.styled";
 
 const Menu = ({ open, setOpen }) => {
+  const clickAway = () => {
+    setOpen(false);
+  };
   return (
     <StyledMenu open={open}>
-      <NavLink onClick={() => setOpen(false)} to="/" exact>
+      <NavLink onClick={clickAway} to="/" exact>
         <span role="img" aria-label="home">
           🏡
         </span>
         Home
       </NavLink>
-      <NavLink onClick={() => setOpen(false)} to="/post">
+      <NavLink onClick={clickAway} to="/post">
         <span role="img" aria-label="blog">
           📓
         </span>
         Blog Posts
       </NavLink>
-      <NavLink onClick={() => setOpen(false)} to="/project">
+      <NavLink onClick={clickAway} to="/project">
         <span role="img" aria-label="projects">
           📐
         </span>
         Projects
       </NavLink>
-      <NavLink onClick={() => setOpen(false)} to="/about">
+      <NavLink onClick={clickAway} to="/about">
         <span role="img" aria-label="About Me">
           👨‍💻
         </span>

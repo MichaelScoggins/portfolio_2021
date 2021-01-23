@@ -22,10 +22,10 @@ function App() {
       <>
         <GlobalStyles />
         <BrowserRouter>
-          <nav id="burger-menu" ref={node}>
+          <nav id="burger-icon-and-menu" ref={node}>
             <div
-              style={{ top: "5%" }}
-              className="fixed absolute items-center rounded"
+              id="burger-container"
+              className="top-10 absolute items-center rounded"
             >
               <Burger open={open} setOpen={setOpen} />
             </div>
