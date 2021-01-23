@@ -55,11 +55,11 @@ export default function SinglePost() {
     return <div style={{ color: "indigo", fontWeigh: 400 }}>Loading...</div>;
 
   return (
-    <main className="bg-yellow-200 min-h-screen p-12">
+    <main className="bg-yellow-200 min-h-screen p-2 md:p-4 lg:p-12">
       <article className="container shadow-lg mx-auto bg-green-300 rounded-lg">
         <header className="relative">
           <div className="absolute h-full w-full flex items-center justify-center p-8">
-            <div className="bg-gray-300 bg-opacity-80 rounded p-12">
+            <div className="bg-gray-300 bg-opacity-80 rounded sm:p-2 md:p-4 lg:p-12">
               <h1 className="cursive text-3xl lg:text-5xl mb-4">
                 {singlePost.title}
               </h1>
@@ -82,7 +82,7 @@ export default function SinglePost() {
             style={{ height: "300px" }}
           />
         </header>
-        <div className="px-16 lg:px-48 py-12 lg:py-20 prose sm:prose-sm md:prose-lg lg:prose-xl max-w-full text-indigo-700">
+        <div className="px-6 md:px-12 lg:px-48 py-12 lg:py-20 prose sm:prose-sm md:prose-lg sm:m-0 lg:prose-xl max-w-full text-indigo-700">
           <BlockContent
             blocks={singlePost.body}
             serializers={serializers}

@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
 html {
-  background-color: #fde68a;
+  background-color: #aaaaaa;
 }
 
 .cursive {
@@ -19,7 +19,7 @@ html {
 
 .prose {
   /* font-family: "Noto Sans", cursive; */
-  font-weight: 450;
+  font-weight: 500;
 }
 background: ${({ theme }) => theme.primaryDark};
 color: ${({ theme }) => theme.primaryLight};

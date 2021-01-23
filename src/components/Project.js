@@ -24,15 +24,17 @@ export default function Project() {
   return (
     <main className="bg-green-300 min-h-screen p-12">
       <section className="container mx-auto">
-        <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
-        <h2 className="text-lg text-gray-600 flex justify-center mb-12">
+        <h1 className="text-5xl flex justify-center cursive mb-2">
+          My Projects
+        </h1>
+        <h2 className="text-lg text-indigo-700 flex justify-center mb-12">
           Welcome to my Project Page!
         </h2>
         <section className="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="relative rounded-lg shadow-xl bg-white p-16">
-                <h3 className="text-gray-800 sm:text-xl md:text-3xl font-bold mb-2 hover:text-red-700">
+              <article className="relative rounded-lg shadow-xl bg-white p-8 lg:p-16">
+                <h3 className="text-gray-800 sm:text-xl md:text-xl lg:text-3xl font-bold mb-2 hover:text-red-700">
                   <a
                     href={project.link}
                     alt={project.title}
@@ -55,14 +57,14 @@ export default function Project() {
                     <strong className="font-bold">Type</strong>:{" "}
                     {project.projectType}
                   </span>
-                  <p className="my-6 text-lg text-gray-700 leading-relaxed">
+                  <p className="my-6 text-base lg:text-lg text-gray-900 leading-relaxed">
                     {project.description}
                   </p>
                   <a
                     href={project.link}
                     rel="noopener noreferrer"
                     target="_blank"
-                    className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl"
+                    className="text-red-500 font-bold hover:underline hover:text-red-400 text-lg lg:text-xl"
                   >
                     View The Project{" "}
                     <span role="img" aria-label="right pointer">
