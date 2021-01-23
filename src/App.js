@@ -25,7 +25,7 @@ function App() {
           <nav id="burger-icon-and-menu" ref={node}>
             <div
               id="burger-container"
-              className="top-10 absolute items-center rounded"
+              className="md:hidden top-10 absolute items-center rounded"
             >
               <Burger open={open} setOpen={setOpen} />
             </div>
