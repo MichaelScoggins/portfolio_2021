@@ -82,7 +82,7 @@ export default function SinglePost() {
             style={{ height: "300px" }}
           />
         </header>
-        <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full text-indigo-700">
+        <div className="px-16 lg:px-48 py-12 lg:py-20 prose sm:prose-sm md:prose-lg lg:prose-xl max-w-full text-indigo-700">
           <BlockContent
             blocks={singlePost.body}
             serializers={serializers}
