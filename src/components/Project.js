@@ -32,7 +32,7 @@ export default function Project() {
           Welcome to my Project Page! I will be adding more projects, and
           there's many more already available on{" "}
           <a
-            className="text-red-700 font-bold underline ml-1"
+            className="text-red-500 font-bold underline ml-1"
             href="https://github.com/michaelscoggins"
           >
             my GitHub
