@@ -4,3 +4,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (orientation: portrait) {
+  #about-section {
+    display: block;
+  }
+}
