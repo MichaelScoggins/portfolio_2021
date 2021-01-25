@@ -71,6 +71,19 @@ export default function Project() {
                       👉
                     </span>
                   </a>
+                  <br />
+                  <br />
+                  <a
+                    href={project.source_code}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="text-indigo-500 font-bold hover:underline hover:text-red-400 text-lg lg:text-xl"
+                  >
+                    View The Code{" "}
+                    <span role="img" aria-label="right pointer">
+                      👉
+                    </span>
+                  </a>
                 </div>
               </article>
             ))}

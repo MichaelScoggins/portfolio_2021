@@ -52,7 +52,7 @@ export default function SinglePost() {
   }, [slug]);
 
   if (!singlePost)
-    return <div style={{ color: "indigo", fontWeigh: 400 }}>Loading...</div>;
+    return <div style={{ color: "indigo", fontWeight: 400 }}>Loading...</div>;
 
   return (
     <main className="bg-yellow-200 min-h-screen p-2 md:p-4 lg:p-12">

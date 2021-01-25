@@ -36,6 +36,11 @@ const project = {
       type: "url",
     },
     {
+      title: "Source Code",
+      name: "source_code",
+      type: "url",
+    },
+    {
       name: "tags",
       type: "array",
       of: [

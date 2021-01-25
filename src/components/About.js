@@ -25,7 +25,8 @@ export default function About() {
       .catch(console.error);
   }, []);
 
-  if (!author) return <div>Loading...</div>;
+  if (!author)
+    return <div style={{ color: "indigo", fontWeight: 400 }}>Loading...</div>;
 
   return (
     <main className="">
