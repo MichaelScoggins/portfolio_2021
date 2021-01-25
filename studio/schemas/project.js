@@ -37,7 +37,7 @@ const project = {
     },
     {
       title: "Source Code",
-      name: "source_code",
+      name: "sourceCode",
       type: "url",
     },
     {

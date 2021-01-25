@@ -15,6 +15,7 @@ export default function Project() {
       description,
       projectType,
       link,
+      sourceCode,
       tags
     }`
       )
@@ -74,10 +75,10 @@ export default function Project() {
                   <br />
                   <br />
                   <a
-                    href={project.source_code}
+                    href={project.sourceCode}
                     rel="noopener noreferrer"
                     target="_blank"
-                    className="text-indigo-500 font-bold hover:underline hover:text-red-400 text-lg lg:text-xl"
+                    className="text-indigo-700 font-bold hover:underline hover:text-indigo-500 text-lg lg:text-xl cursor-pointer"
                   >
                     View The Code{" "}
                     <span role="img" aria-label="right pointer">
