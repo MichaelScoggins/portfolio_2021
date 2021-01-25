@@ -20,6 +20,9 @@ export const StyledMenu = styled.nav`
   }
 
   a {
+    @media (max-width: 813px) {
+      font-size: 1rem;
+    }
     font-size: 2rem;
     text-transform: uppercase;
     padding: 2rem 0;
