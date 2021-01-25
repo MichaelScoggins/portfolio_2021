@@ -36,7 +36,7 @@ export default function About() {
       />
       <div
         id="about-container"
-        className="p-4 lg:p-10 lg:pt-48 container mx-auto relative"
+        className="p-4 lg:p-10 lg:pt-40 container mx-auto relative"
       >
         <section
           id="about-section"
