@@ -4,7 +4,9 @@ import styled from "styled-components";
 export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  @media (orientation: portrait) {
+    justify-content: center;
+  }
   background: ${({ theme }) => theme.primaryDark};
   height: 100vh;
   text-align: left;
