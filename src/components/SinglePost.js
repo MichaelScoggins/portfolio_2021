@@ -14,13 +14,11 @@ function urlFor(source) {
 const serializers = {
   types: {
     code: (props) => (
-      <pre data-language={props.node.language}>
-        {/* <code class={props.node.language}> */}
+      <code class={props.node.language}>
         <SyntaxHighlighter language={props.node.language} style={coldarkDark}>
           {props.node.code}
         </SyntaxHighlighter>
-        {/* </code> */}
-      </pre>
+      </code>
     ),
   },
 };
