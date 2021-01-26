@@ -20,6 +20,18 @@ const serializers = {
         </SyntaxHighlighter>
       </code>
     ),
+    image: (props) => (
+      <figure>
+        <img src={urlFor(props.node)} alt={props.node.alt} />
+        <figcaption>
+          {props.node.caption.slice(0, 4) === "http" ? (
+            <a href={props.node.caption}>{props.node.caption}</a>
+          ) : (
+            props.node.caption
+          )}
+        </figcaption>
+      </figure>
+    ),
   },
 };
 

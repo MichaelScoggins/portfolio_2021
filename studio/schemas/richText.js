@@ -16,6 +16,11 @@ const richText = {
             isHighlighted: true,
           },
         },
+        {
+          name: "alt",
+          type: "string",
+          title: "Alt",
+        },
       ],
     },
     {
