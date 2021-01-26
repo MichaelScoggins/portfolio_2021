@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
+import resume from "./RESUME_MICHAEL_SCOGGINS_FULLSTACK.pdf";
 
 export default function NavBar() {
   return (
@@ -14,7 +15,7 @@ export default function NavBar() {
             to="/"
             exact
             activeClassName="text-yellow-400"
-            className="hidden md:inline-flex items-center py-5 px-3 mr-4 text-red-100 hover:text-yellow-400 text-4xl font-bold cursive tracking-widest"
+            className="hidden md:inline-flex items-center py-5 px-3 mr-4 text-red-100 hover:text-yellow-400 text-2xl lg:text-4xl font-bold cursive tracking-widest"
           >
             Home
           </NavLink>
@@ -39,6 +40,15 @@ export default function NavBar() {
           >
             About Me!
           </NavLink>
+          <a
+            href={resume}
+            target="_blank"
+            rel="noreferrer"
+            activeClassName="text-red-100 bg-blue-400 disable"
+            className="hidden md:inline-flex items-center py-3 px-3 my-5 rounded text-white hover:text-yellow-400"
+          >
+            Résumé
+          </a>
         </nav>
         <div id="social-icons" className="inline-flex py-3 px-3 my-5">
           <SocialIcon
