@@ -28,17 +28,19 @@ export default function Project() {
         <h1 className="text-5xl flex justify-center cursive mb-2">
           My Projects
         </h1>
-        <h2 className="text-lg text-indigo-700 flex justify-center mb-12">
-          Welcome to my Project Page! I will be adding more projects, and
-          there's many more already available on{" "}
-          <a
-            className="text-red-500 font-bold underline ml-1"
-            href="https://github.com/michaelscoggins"
-          >
-            my GitHub
-          </a>
-          .
-        </h2>
+        <div className="flex justify-center">
+          <h2 className="text-lg text-indigo-700 justify-center mb-12">
+            Welcome to my Project Page! I will be adding more projects, and
+            there's many more already available on{" "}
+            <a
+              className="text-red-500 font-bold underline"
+              href="https://github.com/michaelscoggins"
+            >
+              my GitHub
+            </a>
+            .
+          </h2>
+        </div>
         <section className="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
           {projectData &&
             projectData.map((project, index) => (
