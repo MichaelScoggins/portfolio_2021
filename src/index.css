@@ -10,3 +10,9 @@
     display: block;
   }
 }
+
+/* @media (orientation: landscape) {
+  #about-section {
+    display: block;
+  }
+} */

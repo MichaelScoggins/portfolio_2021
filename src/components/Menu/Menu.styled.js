@@ -16,6 +16,7 @@ export const StyledMenu = styled.nav`
   left: 0;
   transition: transform 0.3s ease-in-out;
   z-index: 10;
+  width: 100%;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 100%;
@@ -24,6 +25,11 @@ export const StyledMenu = styled.nav`
   a {
     @media (max-width: 813px) {
       font-size: 1rem;
+    }
+    @media (orientation: landscape) {
+      height: 100vh;
+      padding: 1.25rem 0;
+      margin: auto;
     }
     font-size: 2rem;
     text-transform: uppercase;
