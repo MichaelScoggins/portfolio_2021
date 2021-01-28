@@ -28,7 +28,7 @@ export const StyledMenu = styled.nav`
     }
     @media (orientation: landscape) {
       height: 100vh;
-      padding: 1.25rem 0;
+      padding: 0;
       margin: auto;
     }
     font-size: 2rem;
