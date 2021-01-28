@@ -11,8 +11,8 @@
   }
 }
 
-/* @media (orientation: landscape) {
-  #about-section {
-    display: block;
+@media (orientation: portrait), (min-width: 640px) {
+  #social-icons {
+    margin-right: auto;
   }
-} */
+}
