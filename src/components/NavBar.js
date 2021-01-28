@@ -5,7 +5,7 @@ import resume from "./RESUME_MICHAEL_SCOGGINS_FULLSTACK.pdf";
 
 export default function NavBar() {
   return (
-    <header id="nav-header" className="bg-gray-600">
+    <header id="nav-header" className="bg-gray-600 fixed w-full z-20">
       <div
         id="nav-container"
         className="container mx-auto flex justify-between"

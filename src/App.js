@@ -25,20 +25,28 @@ function App() {
           <nav id="burger-icon-and-menu" ref={node}>
             <div
               id="burger-container"
-              className="md:hidden top-9 right-20 absolute items-center rounded"
+              className="md:hidden z-30 right-2 top-9 fixed rounded"
+              style={{ width: "22%" }}
+              // className="md:hidden top-9 right-20 absolute items-center rounded"
             >
               <Burger open={open} setOpen={setOpen} />
             </div>
             <Menu open={open} setOpen={setOpen} />
           </nav>
-          <NavBar />
-          <Switch>
-            <Route component={Home} path="/" exact />
-            <Route component={About} path="/about" />
-            <Route component={SinglePost} path="/post/:slug" />
-            <Route component={Post} path="/post" />
-            <Route component={Project} path="/project" />
-          </Switch>
+          <div id="html-container">
+            <div id="nav-container">
+              <NavBar />
+            </div>
+            <div id="body-container" className="pt-20">
+              <Switch>
+                <Route component={Home} path="/" exact />
+                <Route component={About} path="/about" />
+                <Route component={SinglePost} path="/post/:slug" />
+                <Route component={Post} path="/post" />
+                <Route component={Project} path="/project" />
+              </Switch>
+            </div>
+          </div>
         </BrowserRouter>
       </>
     </ThemeProvider>

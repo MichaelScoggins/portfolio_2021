@@ -21,6 +21,18 @@ html {
   /* font-family: "Noto Sans", cursive; */
   font-weight: 500;
 }
+
+@media (orientation: portrait) {
+    #about-section {
+      display: block;
+    }
+  }
+
+  @media (orientation: portrait), (max-width: 737px) {
+    #social-icons {
+      margin-right: auto;
+    }
+  }
 background: ${({ theme }) => theme.primaryDark};
 color: ${({ theme }) => theme.primaryLight};
   `;

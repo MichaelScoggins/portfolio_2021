@@ -4,15 +4,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@media (orientation: portrait) {
-  #about-section {
-    display: block;
-  }
-}
-
-@media (orientation: portrait), (max-width: 670px) {
-  #social-icons {
-    margin-right: auto;
-  }
-}
