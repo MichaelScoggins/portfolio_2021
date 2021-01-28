@@ -50,7 +50,7 @@ export default function NavBar() {
             Résumé
           </a>
         </nav>
-        <div id="social-icons" className="inline-flex py-3 px-3 my-5">
+        <div id="social-icons" className="inline-flex py-3 px-3 my-3 md:my-5">
           <SocialIcon
             url="mailto:mtx28@hotmail.com"
             className="mr-4"
