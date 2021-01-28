@@ -11,7 +11,7 @@
   }
 }
 
-@media (orientation: portrait), (min-width: 640px) {
+@media (orientation: portrait), (max-width: 670px) {
   #social-icons {
     margin-right: auto;
   }
