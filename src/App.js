@@ -13,7 +13,7 @@ import { GlobalStyles } from "./global";
 import { theme } from "./theme";
 
 function App() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const node = useRef();
 
   useOnClickOutside(node, () => setOpen(false));
