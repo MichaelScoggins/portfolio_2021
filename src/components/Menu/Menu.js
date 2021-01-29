@@ -7,7 +7,7 @@ import resume from "../../RESUME_MICHAEL_SCOGGINS_FULLSTACK.pdf";
 
 const Menu = ({ open, setOpen }) => {
   const clickAway = () => {
-    setOpen(false);
+    setOpen(true);
   };
   return (
     <StyledMenu open={open}>
