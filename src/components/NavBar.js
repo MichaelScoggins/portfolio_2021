@@ -1,16 +1,27 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
-import resume from "./RESUME_MICHAEL_SCOGGINS_FULLSTACK.pdf";
+import resume from "../RESUME_MICHAEL_SCOGGINS_FULLSTACK.pdf";
+import logo from "../webdev.png";
 
 export default function NavBar() {
   return (
     <header id="nav-header" className="bg-gray-600 fixed w-full z-20">
+      {/* <img
+        src={logo}
+        alt="web dev"
+        className="absolute sm:hidden lg:block h-20 mt-2"
+      /> */}
       <div
         id="nav-container"
         className="container mx-auto flex justify-between"
       >
         <nav id="nav" className="flex">
+          {/* <img
+            src={logo}
+            alt="web dev"
+            className="h-20 mt-2 sm:flex md:hidden"
+          /> */}
           <NavLink
             to="/"
             exact
@@ -50,7 +61,10 @@ export default function NavBar() {
             Résumé
           </a>
         </nav>
-        <div id="social-icons" className="inline-flex py-3 px-3 my-3 md:my-5">
+        <div
+          id="social-icons"
+          className="inline-flex py-3 px-3 my-3 md:my-5 md:ml-auto"
+        >
           <SocialIcon
             url="mailto:mtx28@hotmail.com"
             className="mr-4"

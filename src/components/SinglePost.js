@@ -24,6 +24,7 @@ const serializers = {
       <figure>
         <img src={urlFor(props.node)} alt={props.node.alt} />
         <figcaption>
+          {/* here i am allowing links as captions (i.e. giving the address of a figure or picture i use as a visual) */}
           {props.node.caption && props.node.caption.slice(0, 4) === "http" ? (
             <a href={props.node.caption}>{props.node.caption}</a>
           ) : (
@@ -62,7 +63,11 @@ export default function SinglePost() {
   }, [slug]);
 
   if (!singlePost)
-    return <div style={{ color: "indigo", fontWeight: 400 }}>Loading...</div>;
+    return (
+      <div style={{ color: "indigo", fontWeight: 400, marginTop: 20 }}>
+        Loading...
+      </div>
+    );
 
   return (
     <main className="bg-yellow-200 min-h-screen p-2 md:p-4 lg:p-12">

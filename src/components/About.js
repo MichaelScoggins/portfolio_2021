@@ -26,7 +26,11 @@ export default function About() {
   }, []);
 
   if (!author)
-    return <div style={{ color: "indigo", fontWeight: 400 }}>Loading...</div>;
+    return (
+      <div style={{ color: "indigo", fontWeight: 400, marginTop: 20 }}>
+        Loading...
+      </div>
+    );
 
   return (
     <main className="">

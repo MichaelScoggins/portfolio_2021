@@ -1,12 +1,11 @@
 import React from "react";
 import landscapeImg from "../moonman_relaxer.jpg";
-// import portraitImg from "../virtual_dom_cropped.jpg";
+import logo from "../webdev.png";
 
 export default function Home() {
   return (
     <main>
       <picture>
-        {/* <source srcset={landscapeImg} media="(min-width: 500px)" /> */}
         <img
           src={landscapeImg}
           alt="shoot for the stars chill on the moon"
@@ -20,6 +19,12 @@ export default function Home() {
             Michael!
           </span>
         </h1>
+        <img
+          id="home-main-logo"
+          src={logo}
+          alt="logo"
+          className="sm:hidden md:block"
+        />
       </section>
     </main>
   );

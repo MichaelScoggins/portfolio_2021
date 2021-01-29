@@ -26,6 +26,9 @@ html {
     #about-section {
       display: block;
     }
+    #home-main-logo {
+      display: none;
+    }
   }
 
   @media (orientation: portrait), (max-width: 737px) {

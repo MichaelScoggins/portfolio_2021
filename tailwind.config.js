@@ -6,6 +6,7 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
+            // removing the rendering of backticks for inline code
             "code::before": {
               content: '""',
             },
@@ -16,6 +17,7 @@ module.exports = {
               color: "black",
               fontWeight: "500",
             },
+            // changing the color of bullet points from white to purple
             "ul > li::before": {
               content: '""',
               position: "absolute",

@@ -3,7 +3,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { bool } from "prop-types";
 import { StyledMenu } from "./Menu.styled";
-import resume from "../RESUME_MICHAEL_SCOGGINS_FULLSTACK.pdf";
+import resume from "../../RESUME_MICHAEL_SCOGGINS_FULLSTACK.pdf";
 
 const Menu = ({ open, setOpen }) => {
   const clickAway = () => {
