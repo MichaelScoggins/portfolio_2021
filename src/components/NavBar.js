@@ -1,10 +1,40 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { Burger, Menu } from "../components";
+import { debounce } from "../utilities/helpers";
+import { useOnClickOutside } from "../hooks";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
 import resume from "../RESUME_MICHAEL_SCOGGINS_FULLSTACK.pdf";
 // import logo from "../webdev.png";
 
-export default function NavBar({ visible }) {
+export default function NavBar() {
+  const [open, setOpen] = useState(false);
+
+  const node = useRef();
+  useOnClickOutside(node, () => setOpen(false));
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(false);
+
+  const handleScroll = debounce(() => {
+    // find current scroll position
+    const currentScrollPos = window.pageYOffset;
+
+    // set state based on location info
+    setVisible(
+      (prevScrollPos > currentScrollPos &&
+        prevScrollPos - currentScrollPos > 100) ||
+        currentScrollPos < 10
+    );
+
+    // set state to new scroll position
+    setPrevScrollPos(currentScrollPos);
+  }, 100);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos, visible, handleScroll]);
+
   return (
     <header
       id="nav-header"
@@ -23,6 +53,14 @@ export default function NavBar({ visible }) {
         id="nav-container"
         className="container mx-auto flex justify-between"
       >
+        <nav
+          id="burger-icon-and-menu"
+          ref={node}
+          className="md:hidden z-30 rounded"
+        >
+          <Burger open={open} setOpen={setOpen} />
+          <Menu open={open} setOpen={setOpen} />
+        </nav>
         <nav id="nav" className="flex">
           {/* <img
             src={logo}
