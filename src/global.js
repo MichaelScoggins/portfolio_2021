@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
 html {
-  background-color: #aaaaaa;
+  background-color: #4B5563;
 }
 
 .cursive {
