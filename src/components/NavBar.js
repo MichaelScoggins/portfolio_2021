@@ -13,7 +13,7 @@ export default function NavBar() {
   const node = useRef();
   useOnClickOutside(node, () => setOpen(false));
   const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   const handleScroll = debounce(() => {
     // find current scroll position
