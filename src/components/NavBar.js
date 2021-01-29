@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
 import resume from "../RESUME_MICHAEL_SCOGGINS_FULLSTACK.pdf";
-import logo from "../webdev.png";
+// import logo from "../webdev.png";
 
 export default function NavBar() {
   return (
