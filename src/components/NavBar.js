@@ -21,8 +21,8 @@ export default function NavBar() {
 
     // set state based on location info
     setVisible(
-      (prevScrollPos > currentScrollPos &&
-        prevScrollPos - currentScrollPos > 50) ||
+      prevScrollPos > currentScrollPos ||
+        prevScrollPos - currentScrollPos > 50 ||
         currentScrollPos < 10
     );
 
