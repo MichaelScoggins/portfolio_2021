@@ -4,9 +4,16 @@ import { SocialIcon } from "react-social-icons";
 import resume from "../RESUME_MICHAEL_SCOGGINS_FULLSTACK.pdf";
 // import logo from "../webdev.png";
 
-export default function NavBar() {
+export default function NavBar({ visible }) {
   return (
-    <header id="nav-header" className="bg-gray-600 fixed w-full z-20">
+    <header
+      id="nav-header"
+      className="bg-gray-600 fixed w-full z-20"
+      style={{
+        top: visible ? "0" : "-100px",
+        transition: "top .6s",
+      }}
+    >
       {/* <img
         src={logo}
         alt="web dev"

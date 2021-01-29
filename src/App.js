@@ -11,6 +11,7 @@ import { Burger, Menu } from "./components";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./global";
 import { theme } from "./theme";
+import { debounce } from "./utilities/helpers";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -19,7 +20,7 @@ function App() {
   const node = useRef();
   useOnClickOutside(node, () => setOpen(false));
 
-  const handleScroll = () => {
+  const handleScroll = debounce(() => {
     // find current scroll position
     const currentScrollPos = window.pageYOffset;
 
@@ -32,7 +33,7 @@ function App() {
 
     // set state to new scroll position
     setPrevScrollPos(currentScrollPos);
-  };
+  }, 100);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -58,9 +59,12 @@ function App() {
             <div
               id="nav-container"
               className="pb-20"
-              style={{ top: visible ? "0" : "-60px", transition: "top .6s" }}
+              style={{
+                top: visible ? "0" : "-60px",
+                transition: "top .6s",
+              }}
             >
-              <NavBar />
+              <NavBar visible={visible} />
             </div>
             <div id="body-container">
               <Switch>
