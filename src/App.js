@@ -27,7 +27,6 @@ function App() {
               id="burger-container"
               className="md:hidden z-30 right-0 top-7 fixed rounded"
               style={{ width: "20%" }}
-              // className="md:hidden top-9 right-20 absolute items-center rounded"
             >
               <Burger open={open} setOpen={setOpen} />
             </div>

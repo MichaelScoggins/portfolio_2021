@@ -9,6 +9,7 @@ const Menu = ({ open, setOpen }) => {
   const clickAway = () => {
     setOpen(false);
   };
+
   return (
     <StyledMenu open={open}>
       <NavLink onClick={clickAway} to="/" exact>
