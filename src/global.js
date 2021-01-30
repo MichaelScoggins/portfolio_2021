@@ -81,16 +81,16 @@ color: ${({ theme }) => theme.primaryLight};
 }
 
 #text-container {
-  position: relative;
-  top: 0;
+  /* position: relative; */
+  /* top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   height: 100%;
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  margin: 1em;
+  margin: 1px;
   background: rgba(0, 0, 0, 0.8);
   border-radius: 7px;
   padding: 10px;
