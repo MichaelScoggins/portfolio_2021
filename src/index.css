@@ -5,3 +5,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#project::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+}
+
+#project {
+  height: 100%;
+  width: 100%;
+}
+
+#project:hover #text-container {
+  opacity: 1;
+}
+
+#article-container {
+  position: relative;
+}
+
+#project:hover #article-container {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#text-container {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  margin: 1em;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#text-container:hover {
+  opacity: 1;
+}
