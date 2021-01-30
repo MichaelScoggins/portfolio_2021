@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
+import imageUrlBuilder from "@sanity/image-url";
+import groq from "groq";
+
+const builder = imageUrlBuilder(sanityClient);
+function urlFor(source) {
+  return builder.image(source);
+}
 
 export default function Project() {
   const [projectData, setProjectData] = useState(null);
@@ -7,7 +14,7 @@ export default function Project() {
   useEffect(() => {
     sanityClient
       .fetch(
-        `
+        groq`
     *[_type == "project"]{
       title,
       date,
@@ -16,6 +23,7 @@ export default function Project() {
       projectType,
       link,
       sourceCode,
+      sampleImage,
       tags
     }`
       )
@@ -44,7 +52,15 @@ export default function Project() {
         <section className="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="relative rounded-lg shadow-xl bg-white p-8 lg:p-16">
+              <article
+                className="relative rounded-lg shadow-xl p-8 lg:p-16"
+                style={{
+                  backgroundImage: `url(${
+                    project.sampleImage && urlFor(project.sampleImage)
+                  })`,
+                  backgroundSize: "cover",
+                }}
+              >
                 <h3 className="text-gray-800 sm:text-xl md:text-xl lg:text-3xl font-bold mb-2 hover:text-red-700">
                   <a
                     href={project.link}

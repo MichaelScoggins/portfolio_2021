@@ -41,6 +41,11 @@ const project = {
       type: "url",
     },
     {
+      title: "Sample Image",
+      name: "sampleImage",
+      type: "image",
+    },
+    {
       name: "tags",
       type: "array",
       of: [
