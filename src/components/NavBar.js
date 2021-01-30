@@ -53,6 +53,17 @@ export default function NavBar() {
         id="nav-container"
         className="container mx-auto flex justify-between"
       >
+        {/* <p
+          style={{
+            fontFamily: "Just Another Hand, Cursive",
+            color: "springgreen",
+            position: "relative",
+            top: 12,
+            fontSize: "1.5em",
+          }}
+        >
+          Michael Scoggins
+        </p> */}
         <nav
           id="burger-icon-and-menu"
           ref={node}
