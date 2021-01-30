@@ -50,7 +50,7 @@ export default function Project() {
             .
           </h2>
         </div>
-        <section className="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
+        <section className="grid sm:grid-cols-1 lg:grid-cols-2 gap-8">
           {projectData &&
             projectData.map((project, index) => (
               <div id="article-container" className="w-full">
@@ -64,7 +64,7 @@ export default function Project() {
                   }}
                 >
                   <div id="text-container">
-                    <h3 className="text-pink-400 sm:text-xl md:text-xl lg:text-3xl font-bold mb-2 hover:text-red-700">
+                    <h3 className="text-yellow-300 sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2 hover:text-red-700">
                       <a
                         href={project.link}
                         alt={project.title}
@@ -86,7 +86,7 @@ export default function Project() {
                         href={project.link}
                         rel="noopener noreferrer"
                         target="_blank"
-                        className="text-red-500 font-bold hover:underline hover:text-red-400 text-lg lg:text-xl"
+                        className="text-red-500 font-bold hover:underline hover:text-red-400 text-base md:text-lg lg:text-xl"
                       >
                         View The Project{" "}
                         <span role="img" aria-label="right pointer">
@@ -98,7 +98,7 @@ export default function Project() {
                         href={project.sourceCode}
                         rel="noopener noreferrer"
                         target="_blank"
-                        className="text-green-300 font-bold hover:underline hover:text-green-200 text-lg lg:text-xl cursor-pointer"
+                        className="text-green-300 font-bold hover:underline hover:text-green-200 text-base md:text-lg lg:text-xl cursor-pointer"
                       >
                         View The Code{" "}
                         <span role="img" aria-label="right pointer">

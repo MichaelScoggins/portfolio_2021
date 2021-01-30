@@ -63,11 +63,6 @@ color: ${({ theme }) => theme.primaryLight};
   background: rgba(0, 0, 0, 0);
 }
 
-/* #project {
-  height: 100%;
-  width: 100%;
-} */
-
 #project:hover #text-container {
   opacity: 1;
 }
