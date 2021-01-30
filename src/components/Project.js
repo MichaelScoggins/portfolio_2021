@@ -42,7 +42,7 @@ export default function Project() {
             Welcome to my Project Page! I will be adding more projects, and
             there's many more already available on{" "}
             <a
-              className="text-red-500 font-bold underline"
+              className="text-red-500 hover:text-red-600 font-bold hover:underline"
               href="https://github.com/michaelscoggins"
             >
               my GitHub
@@ -86,7 +86,7 @@ export default function Project() {
                         href={project.link}
                         rel="noopener noreferrer"
                         target="_blank"
-                        className="text-red-500 font-bold hover:underline hover:text-red-400 text-base md:text-lg lg:text-xl"
+                        className="text-red-500 font-bold hover:underline hover:text-red-400 text-base md:text-lg lg:text-xl z-50"
                       >
                         View The Project{" "}
                         <span role="img" aria-label="right pointer">

@@ -53,7 +53,7 @@ color: ${({ theme }) => theme.primaryLight};
 
 #project::before {
   content: "";
-  position: absolute;
+  /* position: absolute; */
   height: 100%;
   width: 100%;
   top: 0;
