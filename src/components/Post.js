@@ -9,9 +9,10 @@ export default function Post() {
   useEffect(() => {
     sanityClient
       .fetch(
-        groq`*[_type == "post"]{
+        groq`*[_type == "post"] | order(publishedAt desc){
       title,
       slug,
+      publishedAt,
       mainImage{
         asset->{
           _id,
@@ -40,7 +41,7 @@ export default function Post() {
               <article>
                 <Link to={"/post/" + post.slug.current} key={post.slug.current}>
                   <span
-                    className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400"
+                    className="flex h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400"
                     key={index}
                   >
                     <img
@@ -48,7 +49,12 @@ export default function Post() {
                       alt={post.mainImage.alt}
                       className="w-full h-full rounded-r object-cover absolute"
                     />
-                    <span className="relative h-full flex justify-end items-end pr-4 pb-4">
+                    <span className="relative flex justify-start items-start">
+                      <h4 className="text-base font-blog px-3 py-4 bg-gray-600 text-red-100 bg-opacity-75 rounded">
+                        {new Date(post.publishedAt).toLocaleDateString()}
+                      </h4>
+                    </span>
+                    <span className="absolute right-0 h-full flex justify-end items-end pr-4 pb-4">
                       <h3 className="text-lg font-blog px-3 py-4 bg-red-700 text-red-100 bg-opacity-75 rounded">
                         {post.title}
                       </h3>

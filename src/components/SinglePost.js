@@ -5,6 +5,7 @@ import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { coldarkDark } from "react-syntax-highlighter/src/styles/prism";
+import groq from "groq";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -43,10 +44,11 @@ export default function SinglePost() {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[slug.current == "${slug}"]{
+        groq`*[slug.current == "${slug}"]{
       title,
       _id,
       slug,
+      publishedAt,
       mainImage{
         asset->{
           _id,
@@ -85,7 +87,11 @@ export default function SinglePost() {
                   className="w-10 h-10 rounded-full"
                 />
                 <p className="cursive flex items-center pl-2 text-2xl">
-                  {singlePost.name}
+                  {singlePost.name} |
+                </p>
+                <br></br>
+                <p className="cursive flex items-center pl-2 text-xl text-indigo-600">
+                  {new Date(singlePost.publishedAt).toLocaleDateString()}
                 </p>
               </div>
             </div>
