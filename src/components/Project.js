@@ -56,7 +56,7 @@ export default function Project() {
               <div id="article-container" className="w-full">
                 <article
                   id="project"
-                  className="relative rounded-lg shadow-xl p-8 lg:p-16 bg-cover"
+                  className="rounded-lg shadow-xl p-8 lg:p-16 bg-cover"
                   style={{
                     backgroundImage: `url(${
                       project.sampleImage && urlFor(project.sampleImage)
@@ -64,7 +64,7 @@ export default function Project() {
                   }}
                 >
                   <div id="text-container">
-                    <h3 className="text-yellow-300 sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2 hover:text-red-700">
+                    <h3 className="text-yellow-300 sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2 hover:text-blue-500">
                       <a
                         href={project.link}
                         alt={project.title}
