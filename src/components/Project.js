@@ -64,7 +64,7 @@ export default function Project() {
                   }}
                 >
                   <div id="project-text-container">
-                    <h3 className="text-yellow-300 sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2 hover:text-blue-500">
+                    <h3 className="text-yellow-300 text-xl md:text-2xl lg:text-3xl font-bold mb-2 hover:text-blue-500">
                       <a
                         href={project.link}
                         alt={project.title}
@@ -75,7 +75,7 @@ export default function Project() {
                       </a>
                     </h3>
                     <span>
-                      <strong className="text-white">
+                      <strong className="text-white sm:text-xs project-text">
                         <span className="text-green-300">Tech Stack: </span>
                         {project.tags.join(", ")}
                       </strong>
