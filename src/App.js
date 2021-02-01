@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./components/Home";
 import About from "./components/About";
 import SinglePost from "./components/SinglePost";
@@ -16,6 +17,7 @@ function App() {
       <>
         <GlobalStyles />
         <BrowserRouter>
+          <ScrollToTop />
           <div id="html-container">
             <div id="nav-container" className="pb-20">
               <NavBar />

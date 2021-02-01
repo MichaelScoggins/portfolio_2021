@@ -32,16 +32,16 @@ html {
     .project-text {
       display: none;
     }
-    #text-container {
-      /* opacity: 1 !important */
-    }
+    /* #text-container {
+      opacity: 1 !important
+    } */
   }
 
-  @media (max-width: 737px) {
+  /* @media (max-width: 737px) {
     #text-container {
-      /* opacity: 1 !important */
+      opacity: 1 !important
     }
-  }
+  } */
 
   @media (orientation: portrait), (max-width: 737px) {
     #social-icons {
