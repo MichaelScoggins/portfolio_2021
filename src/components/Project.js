@@ -42,7 +42,7 @@ export default function Project() {
             Welcome to my Project Page! I will be adding more projects, and
             there's many more already available on{" "}
             <a
-              className="text-red-500 hover:text-red-600 font-bold hover:underline"
+              className="text-red-600 hover:text-red-500 font-bold hover:underline"
               href="https://github.com/michaelscoggins"
             >
               my GitHub
@@ -50,21 +50,22 @@ export default function Project() {
             .
           </h2>
         </div>
-        <section className="grid sm:grid-cols-1 lg:grid-cols-2 gap-8">
+        <section className="grid sm:grid-cols-1 lg:grid-cols-2 gap-8 m-auto">
           {projectData &&
             projectData.map((project, index) => (
-              <div id="article-container" className="w-full">
-                <article
-                  id="project"
-                  className="relative rounded-lg shadow-xl p-8 lg:p-16 bg-cover"
-                  style={{
-                    backgroundImage: `url(${
-                      project.sampleImage && urlFor(project.sampleImage)
-                    })`,
-                  }}
-                >
+              <div
+                id="article-container"
+                className="max-w-xl relative flex m-auto"
+              >
+                <article id="project" className="rounded-lg shadow-xl m-auto">
+                  <img
+                    src={urlFor(project.sampleImage)}
+                    id="project-img"
+                    alt="project"
+                    className="rounded-lg shadow-xl m-auto"
+                  />
                   <div id="text-container">
-                    <h3 className="text-yellow-300 sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2 hover:text-red-700">
+                    <h3 className="text-yellow-300 sm:text-xl md:text-xl lg:text-2xl font-bold mb-2 hover:text-red-700">
                       <a
                         href={project.link}
                         alt={project.title}
