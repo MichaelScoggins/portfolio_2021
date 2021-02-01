@@ -32,7 +32,7 @@ export default function Project() {
   }, []);
 
   return (
-    <main className="bg-green-300 min-h-screen p-12">
+    <main className="bg-green-300 p-12">
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive mb-2">
           My Projects
@@ -50,19 +50,22 @@ export default function Project() {
             .
           </h2>
         </div>
-        <section className="grid sm:grid-cols-1 lg:grid-cols-2 gap-8 m-auto">
+        <section className="grid sm:grid-cols-1 lg:grid-cols-2 gap-8 m-auto min-h-0 min-w-0 overflow-hidden w-10/12">
           {projectData &&
             projectData.map((project, index) => (
               <div
                 id="article-container"
-                className="max-w-xl relative flex m-auto"
+                className="max-w-xl relative flex m-auto min-w-0 overflow-hidden"
               >
-                <article id="project" className="rounded-lg shadow-xl m-auto">
+                <article
+                  id="project"
+                  className="rounded-lg shadow-xl m-auto min-w-0 overflow-hidden"
+                >
                   <img
                     src={urlFor(project.sampleImage)}
                     id="project-img"
                     alt="project"
-                    className="rounded-lg shadow-xl m-auto"
+                    className="rounded-lg shadow-xl m-auto min-h-0 min-w-0 overflow-hidden"
                   />
                   <div id="text-container">
                     <h3 className="text-yellow-300 sm:text-xl md:text-xl lg:text-2xl font-bold mb-2 hover:text-red-700">
