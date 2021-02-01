@@ -42,7 +42,7 @@ export default function Project() {
             Welcome to my Project Page! I will be adding more projects, and
             there's many more already available on{" "}
             <a
-              className="text-red-500 hover:text-red-600 font-bold hover:underline"
+              className="text-red-600 hover:text-red-500 font-bold hover:underline"
               href="https://github.com/michaelscoggins"
             >
               my GitHub
@@ -63,7 +63,7 @@ export default function Project() {
                     })`,
                   }}
                 >
-                  <div id="text-container">
+                  <div id="project-text-container">
                     <h3 className="text-yellow-300 sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2 hover:text-blue-500">
                       <a
                         href={project.link}
@@ -74,7 +74,16 @@ export default function Project() {
                         {project.title}
                       </a>
                     </h3>
-                    <div className="text-gray-200 text-xs space-x-4">
+                    <span>
+                      <strong className="text-white">
+                        <span className="text-green-300">Tech Stack: </span>
+                        {project.tags.join(", ")}
+                      </strong>
+                    </span>
+                    <div
+                      id="project-details-container"
+                      className="text-gray-200 text-xs space-x-4"
+                    >
                       <span className="project-text">
                         <strong className="font-bold">Finished on</strong>:{" "}
                         {new Date(project.date).toLocaleDateString()}

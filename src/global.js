@@ -32,13 +32,13 @@ html {
     .project-text {
       display: none;
     }
-    /* #text-container {
+    /* #project-text-container {
       opacity: 1 !important
     } */
   }
 
   /* @media (max-width: 737px) {
-    #text-container {
+    #project-text-container {
       opacity: 1 !important
     }
   } */
@@ -51,11 +51,11 @@ html {
 background: ${({ theme }) => theme.primaryDark};
 color: ${({ theme }) => theme.primaryLight};
 
-#project:hover #text-container {
+#project:hover #project-text-container {
   opacity: 1;
 }
 
-#text-container {
+#project-text-container {
   height: 100%;
   width: 100%;
   opacity: 0;
