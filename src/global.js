@@ -65,7 +65,7 @@ color: ${({ theme }) => theme.primaryLight};
 
 #article-container:hover #project-img {
   opacity: .8;
-  filter: blur(2px) brightness(.5);
+  filter: blur(5px) brightness(.4);
 }
 
 #text-container {
@@ -79,7 +79,7 @@ color: ${({ theme }) => theme.primaryLight};
   opacity: 0;
   transition: 0.5s ease;
   margin: auto;
-  background: rgba(20,50,80,.4);
+  /* background: rgba(0,0,0,.6); */
   padding: 10px;
   border-radius: 10px
 }
