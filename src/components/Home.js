@@ -1,6 +1,6 @@
 import React from "react";
 import landscapeImg from "../moonman_relaxer.jpg";
-import logo from "../webdev.png";
+// import logo from "../webdev.png";
 
 export default function Home() {
   return (
@@ -19,12 +19,12 @@ export default function Home() {
             Michael!
           </span>
         </h1>
-        <img
+        {/* <img
           id="home-main-logo"
           src={logo}
           alt="logo"
           className="sm:hidden md:block"
-        />
+        /> */}
       </section>
     </main>
   );

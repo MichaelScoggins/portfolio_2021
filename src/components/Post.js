@@ -32,9 +32,14 @@ export default function Post() {
         <h1 className="text-5xl flex justify-center cursive mb-2">
           Blog Posts
         </h1>
-        <h2 className="text-lg text-indigo-700 flex justify-center mb-12">
+        <h2 className="text-lg text-indigo-700 flex justify-center mb-3">
           Byte-Sized Bits of JavaScript
         </h2>
+        <h5 className="text-sm text-gray-500 flex justify-center mb-4">
+          Images not mine (generically chosen from google images... if image is
+          yours and you would like me to remove it, please contact me and I will
+          remove immediately.)
+        </h5>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {postData &&
             postData.map((post, index) => (
